@@ -1,0 +1,358 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: inherit;
+    
+}
+body{
+    background: linear-gradient(359deg, #ffaea1, #ffa2a1, #ffd8a1, #d1fdff, #ffebdd);
+    background-size: 1000% 1000%;
+    -webkit-animation: AnimationName 59s ease infinite;
+    -moz-animation: AnimationName 59s ease infinite;
+    animation: AnimationName 59s ease infinite;
+    background-repeat: no-repeat;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:20% 0%}
+    50%{background-position:81% 100%}
+    100%{background-position:20% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:20% 0%}
+    50%{background-position:81% 100%}
+    100%{background-position:20% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:20% 0%}
+    50%{background-position:81% 100%}
+    100%{background-position:20% 0%}
+}   
+.dice{
+    position: relative;
+    width:50px;
+    height:50px;
+    padding:10px;
+    font-size:50px;
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color:salmon;
+    margin:5px;
+    display: inline-block;
+    bottom:0%;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color:salmon;
+}
+
+#status{
+    width:fit-content;
+    height:fit-content;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size:50px;
+    color:salmon;
+    text-align: center;
+    position:fixed;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-40%);
+    
+   
+
+    
+}
+span{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size:20px;
+    color: turquoise;
+}
+#caption{
+    width:fit-content;
+    height:fit-content;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size:25px;
+    font-style: italic;
+    color:salmon;
+    text-align: center;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    animation: reveal 3000ms ease-in-out forwards 200ms,
+             glow 2500ms linear infinite 2000ms;
+}
+
+  @keyframes reveal {
+    80%{
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #fff;
+    }
+  }
+
+
+.fire{
+    background-image: url('fire.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-animation: AnimationName2 5s ease infinite;
+    -moz-animation: AnimationName2 5s ease infinite;
+    animation: AnimationName2 5s ease infinite;
+    background-repeat: no-repeat;
+}
+@keyframes AnimationName2 {
+    0%{background-image:url('fire.gif')}
+    50%{background-image:url('plane.gif')}
+    100%{background-image: url('fire.gif');}
+}   
+.water{
+        background-image: url('water.gif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+}
+.h2o{
+    background-image: url('h2o.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.blackjack{
+    background-image: url('card.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px solid black;
+}
+.bar{
+    position:fixed;
+    top:60%;
+    left:50%;
+    transform: translate(-50%,-60%);
+    width:fit-content;
+    height: fit-content;
+}
+.button-bar{
+    width:100%;
+    height:150px;
+    border:none;
+    position:fixed;
+    bottom:0%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: salmon;
+
+}
+.wrapper{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: space-evenly;
+}
+.container{
+    margin-top: 20px;
+    width:16%;
+    height:fit-content;
+    display:inline-block;
+    vertical-align: baseline;
+
+}
+.one{
+    width:50px;
+    height:50px;
+    background-image: url('number-01.png');
+    background-size: contain;
+    display: inline-block;
+    margin:5px;
+    -webkit-animation: shake 15s ease infinite;
+    -moz-animation: shake 15s ease infinite;
+    animation: shake 15s ease infinite;
+}
+
+.two{
+    background-image: url('number-02.png');
+    background-size: contain;
+    width:50px;
+    height:50px;
+    display: inline-block;
+    margin:5px;
+}
+.three{
+    background-image: url('number-03.png');
+    background-size: contain;
+    width:50px;
+    height:50px;
+    display: inline-block;
+    margin:5px;
+}
+.four{
+    width:50px;
+    height:50px;
+    background-image: url('number-04.png');
+    background-size: contain;
+    display: inline-block;
+    margin:5px;
+}
+
+.five{
+    background-image: url('number-05.png');
+    background-size: contain;
+    width:50px;
+    height:50px;
+    display: inline-block;
+    margin:5px;
+}
+.six{
+    background-image: url('number-06.png');
+    background-size: contain;
+    width:50px;
+    height:50px;
+    display: inline-block;
+    margin:5px;
+}
+
+.button{
+    width:100px;
+    height:100px;
+    background-image: url(dice.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    animation-delay: 15s;
+    -webkit-animation: shake 5s ease infinite;
+    -moz-animation: shake 5s ease infinite;
+    animation: shake 5s ease infinite;
+
+}
+@-webkit-keyframes shake {
+    from,
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+    }
+  }
+  
+  @keyframes shake {
+    from,
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+    }
+  }
+
+  .two, .three, .four, .five, .six{
+    animation: glitch 10s linear infinite;
+  }
+  
+  @keyframes glitch{
+    2%,64%{
+      transform: translate(2px,0) skew(0deg);
+    }
+    4%,60%{
+      transform: translate(-2px,0) skew(0deg);
+    }
+    62%{
+      transform: translate(0,0) skew(5deg); 
+    }
+  }
+  
+  .two:before, .three:before, .four:before, .five:before, .six:before,
+  .two:after, .three:after, .four:after, .five:after, .six:after{
+    content: attr(title);
+    position: absolute;
+    left: 0;
+  }
+  
+  .two:before .three:before, .four:before, .five:before, .six:before{
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  }
+  
+  @keyframes glitchTop{
+    2%,64%{
+      transform: translate(2px,-2px);
+    }
+    4%,60%{
+      transform: translate(-2px,2px);
+    }
+    62%{
+      transform: translate(13px,-1px) skew(-13deg); 
+    }
+  }
+  
+  .two:after, .three:after, .four:after, .five:after, .six:after{
+    animation: glitchBotom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  }
+  
+  @keyframes glitchBotom{
+    2%,64%{
+      transform: translate(-2px,0);
+    }
+    4%,60%{
+      transform: translate(-2px,0);
+    }
+    62%{
+      transform: translate(-22px,5px) skew(21deg); 
+    }
+  }
+  
+
+  
+
+
+
